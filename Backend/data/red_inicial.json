@@ -1,0 +1,5 @@
+{
+    "tanques": [{"id": "T1", "capacidad": 100}],
+    "barrios": [{"id": "B1", "demanda": 50}],
+    "conexiones": [{"origen": "T1", "destino": "B1", "capacidad": 50}]
+}

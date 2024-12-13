@@ -1,0 +1,145 @@
+{
+    "casas": {
+        "Casa1": {
+            "demanda": 10
+        },
+        "Casa2": {
+            "demanda": 15
+        },
+        "Casa3": {
+            "demanda": 8
+        },
+        "Casa4": {
+            "demanda": 12
+        },
+        "Casa5": {
+            "demanda": 20
+        },
+        "Casa6": {
+            "demanda": 5
+        },
+        "Casa7": {
+            "demanda": 15
+        },
+        "Casa8": {
+            "demanda": 20
+        },
+        "Casa9": {
+            "demanda": 25
+        },
+        "Casa10": {
+            "demanda": 30
+        },
+        "Casa11": {
+            "demanda": 20
+        }
+    },
+    "tanques": {
+        "TanqueA": {
+            "capacidad": 100,
+            "nivel": 60,
+            "conexiones": [
+                "Casa7",
+                "Casa4"
+            ]
+        },
+        "TanqueB": {
+            "capacidad": 80,
+            "nivel": 30,
+            "conexiones": [
+                "Casa1",
+                "Casa3"
+            ]
+        },
+        "TanqueC": {
+            "capacidad": 40,
+            "nivel": 0,
+            "conexiones": [
+                "Casa8",
+                "TanqueD"
+            ]
+        },
+        "TanqueD": {
+            "capacidad": 40,
+            "nivel": 60,
+            "conexiones": []
+        }
+    },
+    "tuberias": [
+        {
+            "nodo1": "Casa1",
+            "nodo2": "Casa2",
+            "capacidad_flujo": 15
+        },
+        {
+            "nodo1": "Casa1",
+            "nodo2": "Casa3",
+            "capacidad_flujo": 34
+        },
+        {
+            "nodo1": "Casa2",
+            "nodo2": "TanqueB",
+            "capacidad_flujo": 20
+        },
+        {
+            "nodo1": "Casa5",
+            "nodo2": "Casa4",
+            "capacidad_flujo": 30
+        },
+        {
+            "nodo1": "Casa6",
+            "nodo2": "Casa5",
+            "capacidad_flujo": 20
+        },
+        {
+            "nodo1": "Casa7",
+            "nodo2": "Casa6",
+            "capacidad_flujo": 25
+        },
+        {
+            "nodo1": "Casa7",
+            "nodo2": "Casa5",
+            "capacidad_flujo": 20
+        },
+        {
+            "nodo1": "Casa9",
+            "nodo2": "Casa10",
+            "capacidad_flujo": 30
+        },
+        {
+            "nodo1": "Casa11",
+            "nodo2": "TanqueB",
+            "capacidad_flujo": 30
+        },
+        {
+            "nodo1": "TanqueA",
+            "nodo2": "Casa7",
+            "capacidad_flujo": 40
+        },
+        {
+            "nodo1": "TanqueA",
+            "nodo2": "Casa4",
+            "capacidad_flujo": 0
+        },
+        {
+            "nodo1": "TanqueB",
+            "nodo2": "Casa1",
+            "capacidad_flujo": 40
+        },
+        {
+            "nodo1": "TanqueB",
+            "nodo2": "Casa3",
+            "capacidad_flujo": 10
+        },
+        {
+            "nodo1": "TanqueC",
+            "nodo2": "Casa8",
+            "capacidad_flujo": 20
+        },
+        {
+            "nodo1": "TanqueC",
+            "nodo2": "TanqueD",
+            "capacidad_flujo": 20
+        }
+    ]
+}
